@@ -1,0 +1,9 @@
+{
+    "users": [
+        { "name": "yagi", "group": "deploy"},
+        { "name": "deploy", "group": "deploy"}
+    ],
+    "run_list":[
+        "recipe[users]"
+    ]
+}
