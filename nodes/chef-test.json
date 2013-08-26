@@ -3,7 +3,20 @@
         { "name": "yagi", "group": "deploy"},
         { "name": "deploy", "group": "deploy"}
     ],
+    "authorization": {
+        "sudo": {
+            "groups": ["vagrant", "deploy"],
+            "users": ["vagrant", "deploy", "yagi"],
+            "passwordless": true,
+            "sudoers_defaults": [
+                "env_reset",
+                "mail_badpass",
+                "secure_path=\"/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\""
+            ]
+        }
+    },
     "run_list":[
-        "recipe[users]"
+        "recipe[users]",
+        "recipe[sudo]"
     ]
 }

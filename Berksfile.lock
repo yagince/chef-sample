@@ -1,4 +1,7 @@
 {
   "sources": {
+    "sudo": {
+      "locked_version": "2.1.4"
+    }
   }
 }
