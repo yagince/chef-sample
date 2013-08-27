@@ -1,0 +1,16 @@
+server {
+  listen      <%= node['nginx']['port'] %>;
+  server_name _;
+
+  # hogehoge
+
+  access_log  /var/log/nginx/access.log;
+  error_log   /var/log/nginx/error.log;
+  rewrite_log on;
+
+  location / {
+    root   /opt/nginx-1.4.1/html;
+    index  index.html index.htm;  
+  }
+
+}

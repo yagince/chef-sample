@@ -15,8 +15,18 @@
             ]
         }
     },
+    "nginx":{
+        "version": "1.4.1",
+        "install_method": "source",
+        "source": {
+            "version": "1.4.1"
+        },
+        "port" : 80,
+        "worker_processes": 2
+    },
     "run_list":[
         "recipe[users]",
-        "recipe[sudo]"
+        "recipe[sudo]",
+        "recipe[nginx]"
     ]
 }
