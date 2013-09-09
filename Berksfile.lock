@@ -6,6 +6,11 @@
     "nginx": {
       "locked_version": "1.7.0"
     },
+    "redis": {
+      "locked_version": "2.1.1",
+      "git": "https://github.com/yagince/chef-redis.git",
+      "ref": "d7ef9d763ade63f6c62817156e1499fc0d083321"
+    },
     "build-essential": {
       "locked_version": "1.4.0"
     },
@@ -20,6 +25,12 @@
     },
     "ohai": {
       "locked_version": "1.1.10"
+    },
+    "stunnel": {
+      "locked_version": "2.0.4"
+    },
+    "discovery": {
+      "locked_version": "0.2.0"
     }
   }
 }
